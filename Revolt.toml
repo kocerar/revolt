@@ -12,11 +12,11 @@ redis = "redis://redis/"
 # See https://github.com/revoltchat/self-hosted/blob/master/Caddyfile
 #
 # Remember to change these to https/wss where appropriate in production!
-app = "http://revolt.zlobin.xyz"
-api = "http://revolt.zlobin.xyz/api"
-events = "ws://revolt.zlobin.xyz/ws"
-autumn = "http://revolt.zlobin.xyz/autumn"
-january = "http://revolt.zlobin.xyz/january"
+app = "http://192.168.13.6"
+api = "http://192.168.13.6/api"
+events = "ws://192.168.13.6/ws"
+autumn = "http://192.168.13.6/autumn"
+january = "http://192.168.13.6/january"
 voso_legacy = ""
 voso_legacy_ws = ""
 
@@ -43,8 +43,8 @@ from_address = "noreply@example.com"
 # 1. Run `openssl ecparam -name prime256v1 -genkey -noout -out vapid_private.pem`
 # 2. Find `private_key` using `base64 vapid_private.pem`
 # 3. Find `public_key` using `openssl ec -in vapid_private.pem -outform DER|tail -c 65|base64|tr '/+' '_-'|tr -d '\n'`
-private_key = "LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUJSUWpyTWxLRnBiVWhsUHpUbERvcEliYk1yeVNrNXpKYzVYVzIxSjJDS3hvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFWnkrQkg2TGJQZ2hEa3pEempXOG0rUXVPM3pCajRXT1phdkR6ZU00c0pqbmFwd1psTFE0WAp1ZDh2TzVodU94QWhMQlU3WWRldVovWHlBdFpWZmNyQi9BPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo"
-public_key = "BGcvgR-i2z4IQ5Mw841vJvkLjt8wY-FjmWrw83jOLCY52qcGZS0OF7nfLzuYbjsQISwVO2HXrmf18gLWVX3Kwfw="
+private_key = "CpU+W255FoOC1jN7UE98A4w52asVEojUenyYlOrkbRI="
+public_key = "sikyyl0x48wV/FTQ6YC308EGHV1bF7McQPgaD8qsLqo="
 
 [api.fcm]
 # Google Firebase Cloud Messaging Service Account Key
